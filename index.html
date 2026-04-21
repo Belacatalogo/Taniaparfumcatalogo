@@ -69,18 +69,15 @@
 .fav-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.06);align-items:center}.fav-item-img{width:56px;height:72px;object-fit:cover;border-radius:4px;flex-shrink:0;border:1px solid rgba(201,168,76,0.15)}.fav-item-info{flex:1;min-width:0}.fav-item-brand{font-size:0.5rem;letter-spacing:0.4em;text-transform:uppercase;color:#C9A84C;margin-bottom:2px}.fav-item-name{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:300;color:#f7f0e6;line-height:1.2}.fav-item-sub{font-size:0.65rem;color:rgba(255,255,255,0.35);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.fav-item-remove{width:28px;height:28px;background:none;border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:0.75rem;flex-shrink:0;transition:all 0.2s}.fav-item-remove:hover{border-color:#e8384f;color:#e8384f;background:rgba(232,56,79,0.1)}
 .fav-panel-footer{padding:16px 20px 24px;border-top:1px solid rgba(201,168,76,0.15);flex-shrink:0}.fav-panel-wa{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:15px 20px;background:#25D366;color:#fff;text-decoration:none;font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;border:none;border-radius:4px;cursor:pointer;transition:background 0.25s,transform 0.2s;box-shadow:0 4px 16px rgba(37,211,102,0.3)}.fav-panel-wa:hover{background:#1ebe5d;transform:translateY(-1px)}.fav-panel-wa svg{flex-shrink:0}.fav-panel-clear{display:block;width:100%;margin-top:10px;padding:10px;background:none;border:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.3);font-family:'Montserrat',sans-serif;font-size:0.6rem;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;border-radius:4px;cursor:pointer;transition:all 0.2s}.fav-panel-clear:hover{border-color:rgba(232,56,79,0.4);color:#e8384f}
 .todos-search-wrap{max-width:480px;margin:0 auto;padding:0 20px 20px;background:#15091f;position:relative}.todos-search{width:100%;padding:14px 20px 14px 46px;background:rgba(255,255,255,0.04);border:1px solid rgba(201,168,76,0.25);border-radius:30px;color:#f7f0e6;font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:300;letter-spacing:0.03em;outline:none;transition:border-color 0.3s ease,background 0.3s ease;-webkit-appearance:none;appearance:none}.todos-search::placeholder{color:rgba(232,221,208,0.3);letter-spacing:0.05em}.todos-search:focus{border-color:rgba(201,168,76,0.6);background:rgba(255,255,255,0.06)}.todos-search-icon{position:absolute;left:36px;top:50%;transform:translateY(-50%);pointer-events:none;color:rgba(201,168,76,0.5)}.todos-search-clear{position:absolute;right:36px;top:50%;transform:translateY(-50%);width:28px;height:28px;background:none;border:1px solid rgba(255,255,255,0.1);border-radius:50%;color:rgba(255,255,255,0.35);font-size:0.7rem;cursor:pointer;display:none;align-items:center;justify-content:center;transition:all 0.2s}.todos-search-clear.visible{display:flex}.todos-search-clear:hover{border-color:rgba(201,168,76,0.4);color:#C9A84C}.todos-search-info{text-align:center;padding:8px 20px 0;font-size:0.6rem;letter-spacing:0.15em;color:rgba(201,168,76,0.45);display:none}.todos-search-info.visible{display:block}
+
+.esg-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.62);display:flex;align-items:center;justify-content:center;z-index:50;pointer-events:none}.esg-tag{background:rgba(150,25,25,0.92);color:#fff;font-family:'Montserrat',sans-serif;font-size:0.6rem;font-weight:600;letter-spacing:0.32em;text-transform:uppercase;padding:9px 18px;border:1px solid rgba(255,100,100,0.35);backdrop-filter:blur(4px)}
+.instagram-btn{display:inline-flex;align-items:center;gap:10px;margin-top:12px;padding:13px 26px;background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);color:#fff;font-size:0.72rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;border-radius:50px;transition:transform 0.2s ease,box-shadow 0.3s ease;box-shadow:0 4px 20px rgba(253,29,29,0.3)}.instagram-btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(253,29,29,0.45)}
+.prod-modal-price-wrap{display:none;text-align:center;margin:16px 0 18px;position:relative;padding:14px 0}.prod-modal-price-wrap::before,.prod-modal-price-wrap::after{content:'';position:absolute;left:10%;right:10%;height:1px;background:linear-gradient(to right,transparent,rgba(201,168,76,0.35),transparent)}.prod-modal-price-wrap::before{top:0}.prod-modal-price-wrap::after{bottom:0}.prod-modal-price-label{font-size:0.5rem;letter-spacing:0.5em;text-transform:uppercase;color:rgba(201,168,76,0.55);margin-bottom:6px}.prod-modal-price-val{font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:#e8c97a;font-weight:300;letter-spacing:0.03em;line-height:1;text-shadow:0 0 30px rgba(232,201,122,0.35)}
 </style>
-</head><body><nav class="tab-nav"><button class="tab-btn active" data-tab="colecao" onclick="switchTab('colecao')">✦ Coleção<span class="tab-underline"></span></button><button class="tab-btn" data-tab="todos" onclick="switchTab('todos')">☰ Todos os Produtos<span class="tab-underline"></span></button><button class="tab-btn" data-tab="maes" onclick="switchTab('maes')">🌸 Dia das Mães<span class="tab-underline"></span></button><button class="tab-btn" data-tab="beleza" onclick="switchTab('beleza')">💄 Beleza & Kids<span class="tab-underline"></span></button></nav><div id="colecao" class="tab-panel active"><section class="hero"><div class="hero-ornament"></div><h1 class="hero-brand">Tania Parfum</h1><p class="hero-tagline">Onde a fragrância tem seu estilo</p><div class="hero-divider"><span>✦</span></div><p class="hero-subtitle">Catálogo de Produtos Selecionados</p><div class="corner-br"></div><div class="scroll-hint">Deslize</div></section><div class="carousel" id="heroCarousel"><div class="carousel-track" id="carouselTrack"><div class="carousel-slide active"><img decoding="async" fetchpriority="high" class="carousel-slide-img" src="https://i.ibb.co/zhjd0crL/IMG-8621.jpg" alt="Glamour Secret Black"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">✦ Destaque Feminino</p><h3 class="carousel-slide-name">Glamour<br>Secret Black</h3><p class="carousel-slide-sub">Deo Parfum Intense — O Boticário</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/zhjd0crL/IMG-8621.jpg','O Boticário','Glamour<br>Secret Black','Deo Parfum Intense Feminino','Feminino','pink')">Ver detalhes</button></div></div><div class="carousel-slide"><img fetchpriority="low" decoding="async" loading="lazy" class="carousel-slide-img" src="https://i.ibb.co/hJWSsxCj/IMG-8624.jpg" alt="Malbec Black Kit"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">✦ Kit Masculino</p><h3 class="carousel-slide-name">Malbec<br>Black</h3><p class="carousel-slide-sub">Deo Colônia + Body Spray + Shower Gel — O Boticário</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/hJWSsxCj/IMG-8624.jpg','O Boticário','Malbec<br>Black','Deo Colônia + Body Spray + Shower Gel','Kit','')">Ver detalhes</button></div></div><div class="carousel-slide"><img fetchpriority="low" decoding="async" loading="lazy" class="carousel-slide-img" src="https://i.ibb.co/jvzMhkHD/IMG-8623.jpg" alt="Floratta Red Kit"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">✦ Kit Feminino</p><h3 class="carousel-slide-name">Floratta<br>Red</h3><p class="carousel-slide-sub">Perfume + Creme + Sabonete Líquido — O Boticário</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/jvzMhkHD/IMG-8623.jpg','O Boticário','Floratta<br>Red','Perfume + Creme + Sabonete Líquido','Kit','pink')">Ver detalhes</button></div></div><div class="carousel-slide"><img fetchpriority="low" decoding="async" loading="lazy" class="carousel-slide-img" src="https://i.ibb.co/20Szm5nY/IMG-8847.jpg" alt="Kit Noite Encantada"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">🌸 Dia das Mães</p><h3 class="carousel-slide-name">Noite<br>Encantada</h3><p class="carousel-slide-sub">Cuide-se Bem Boa Noite Body Splash + Hidratante Ameixa e Praliné</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/20Szm5nY/IMG-8847.jpg','Kit Dia das Mães','Noite<br>Encantada','Cuide-se Bem Boa Noite Body Splash + Eudora Instance Ameixa e Praliné Hidratante 350ml','🌸 Kit Especial','pink')">Ver detalhes</button></div></div><div class="carousel-slide"><img fetchpriority="low" decoding="async" loading="lazy" class="carousel-slide-img" src="https://i.ibb.co/Y9zrp0Q/IMG-8852.jpg" alt="Kit Volume e Brilho"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">🌸 Dia das Mães</p><h3 class="carousel-slide-name">Volume<br>& Brilho</h3><p class="carousel-slide-sub">Siàge — Shampoo + Condicionador + Máscara + Sérum + Mousse</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/Y9zrp0Q/IMG-8852.jpg','Kit Dia das Mães','Volume<br>& Brilho','Eudora Siàge Volume Imediato — Shampoo + Condicionador + Máscara + Sérum + Mousse','🌸 Kit Especial','pink')">Ver detalhes</button></div></div><div class="carousel-slide"><img fetchpriority="low" decoding="async" loading="lazy" class="carousel-slide-img" src="https://i.ibb.co/rG8w4Rwn/IMG-8843.jpg" alt="Coffee Woman Seduction Kit"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">✦ Kit Feminino</p><h3 class="carousel-slide-name">Coffee Woman<br>Seduction</h3><p class="carousel-slide-sub">Deo Parfum + Hidratante + Sabonete Líquido — O Boticário</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/rG8w4Rwn/IMG-8843.jpg','O Boticário','Coffee Woman<br>Seduction','Kit Deo Parfum + Hidratante + Sabonete Líquido','Kit','pink')">Ver detalhes</button></div></div><div class="carousel-slide"><img fetchpriority="low" decoding="async" loading="lazy" class="carousel-slide-img" src="https://i.ibb.co/nsKsWX9R/IMG-8885.jpg" alt="Kit Floratta Red Passion"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">✦ Kit Feminino</p><h3 class="carousel-slide-name">Floratta<br>Red Passion</h3><p class="carousel-slide-sub">Deo Parfum + Hidratante — Floratta · O Boticário</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/nsKsWX9R/IMG-8885.jpg','Floratta · O Boticário','Kit Floratta<br>Red Passion','Deo Parfum + Hidratante · Feminino','Kit','pink')">Ver detalhes</button></div></div></div><div class="carousel-arrows"><button class="carousel-arrow" onclick="carouselPrev()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button><button class="carousel-arrow" onclick="carouselNext()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button></div><div class="carousel-dots" id="carouselDots"><button class="carousel-dot active" onclick="carouselGoTo(0)"></button><button class="carousel-dot" onclick="carouselGoTo(1)"></button><button class="carousel-dot" onclick="carouselGoTo(2)"></button><button class="carousel-dot" onclick="carouselGoTo(3)"></button><button class="carousel-dot" onclick="carouselGoTo(4)"></button><button class="carousel-dot" onclick="carouselGoTo(5)"></button><button class="carousel-dot" onclick="carouselGoTo(6)"></button></div><div class="carousel-progress" id="carouselProgress"></div></div><div class="section-ornament reveal">· · ✦ · ·</div><div class="section-header reveal"><p class="section-label">✦ Coleção</p><h2 class="section-title">Fragrâncias & Beleza</h2></div><div class="catalog"><div class="product-card" data-pid="36"><div class="product-img-wrap"><img loading="lazy" decoding="async" src="https://i.ibb.co/zMb92Gp/IMG-8630.jpg" alt="Lily Kit"><div class="product-overlay"></div></div><span class="product-badge">Kit</span><div class="product-info"><p class="product-brand">O Boticário</p><h3 class="product-name">Lily<br>Kit</h3><p class="product-sub">Creme Hidratante + Sabonetes</p></div></div><div class="product-card" data-pid="41"><div class="product-img-wrap"><img loading="lazy" decoding="async" src="https://i.ibb.co/hJWSsxCj/IMG-8624.jpg" alt="Malbec Black Kit"><div class="product-overlay"></div></div><span class="product-badge">Kit</span><div class="product-info"><p class="product-brand">O Boticário</p><h3 class="product-name">Malbec<br>Black</h3><p class="product-sub">Deo Colônia + Body Spray + Shower Gel</p></div></div><div class="product-card" data-pid="1"><div class="product-img-wrap"><img loading="lazy" decoding="async" src="https://i.ibb.co/zhjd0crL/IMG-8621.jpg" alt="Glamour Secret Black Intense"><div class="product-overlay"></div></div><span class="product-badge pink">Feminino</span><div class="product-info"><p class="product-brand">O Boticário</p><h3 class="product-name">Glamour<br>Secret Black</h3><p class="product-sub">Deo Parfum Intense Feminino</p></div></div><div class="product-card" data-pid="13"><div class="product-img-wrap"><img loading="lazy" decoding="async" src="https://i.ibb.co/TBSXwFDh/IMG-8633.jpg" alt="O.U.i Scapin 245"><div class="product-overlay"></div></div><div class="product-info"><p class="product-brand">O.U.i</p><h3 class="product-name">Scapin<br>245</h3><p class="product-sub">Loção Hidratante Deodorante Perfumada</p></div></div><div class="product-card" data-pid="26"><div class="product-img-wrap"><img loading="lazy" decoding="async" src="https://i.ibb.co/4gNnbSLt/IMG-8632.jpg" alt="Siàge Argan Oil"><div class="product-overlay"></div></div><div class="product-info"><p class="product-brand">Eudora · Siàge</p><h3 class="product-name">Argan<br>Oil</h3><p class="product-sub">Óleo Nutritivo 60ml</p></div></div><div class="product-card" data-pid="37"><div class="product-img-wrap"><img loading="lazy" decoding="async" src="https://i.ibb.co/jvzMhkHD/IMG-8623.jpg" alt="Floratta Red Kit"><div class="product-overlay"></div></div><span class="product-badge pink">Kit</span><div class="product-info"><p class="product-brand">O Boticário</p><h3 class="product-name">Floratta<br>Red</h3><p class="product-sub">Perfume + Creme + Sabonete Líquido</p></div></div></div><footer class="footer"><div class="footer-brand">Tania Parfum</div><div class="footer-line"></div><p class="footer-owner">Tânia</p><p class="footer-owner-role">Proprietária</p><div class="footer-line"></div><p class="footer-contact">
+</head><body><nav class="tab-nav"><button class="tab-btn active" data-tab="colecao" onclick="switchTab('colecao')">✦ Coleção<span class="tab-underline"></span></button><button class="tab-btn" data-tab="todos" onclick="switchTab('todos')">☰ Todos os Produtos<span class="tab-underline"></span></button><button class="tab-btn" data-tab="maes" onclick="switchTab('maes')">🌸 Dia das Mães<span class="tab-underline"></span></button><button class="tab-btn" data-tab="beleza" onclick="switchTab('beleza')">💄 Beleza & Kids<span class="tab-underline"></span></button></nav><div id="colecao" class="tab-panel active"><section class="hero"><div class="hero-ornament"></div><h1 class="hero-brand">Tania Parfum</h1><p class="hero-tagline">Onde a fragrância tem seu estilo</p><div class="hero-divider"><span>✦</span></div><p class="hero-subtitle">Catálogo de Produtos Selecionados</p><div class="corner-br"></div><div class="scroll-hint">Deslize</div></section><div class="carousel" id="heroCarousel"><div class="carousel-track" id="carouselTrack"><div class="carousel-slide active"><img decoding="async" fetchpriority="high" class="carousel-slide-img" src="https://i.ibb.co/zhjd0crL/IMG-8621.jpg" alt="Glamour Secret Black"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">✦ Destaque Feminino</p><h3 class="carousel-slide-name">Glamour<br>Secret Black</h3><p class="carousel-slide-sub">Deo Parfum Intense — O Boticário</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/zhjd0crL/IMG-8621.jpg','O Boticário','Glamour<br>Secret Black','Deo Parfum Intense Feminino','Feminino','pink')">Ver detalhes</button></div></div><div class="carousel-slide"><img fetchpriority="low" decoding="async" loading="lazy" class="carousel-slide-img" src="https://i.ibb.co/hJWSsxCj/IMG-8624.jpg" alt="Malbec Black Kit"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">✦ Kit Masculino</p><h3 class="carousel-slide-name">Malbec<br>Black</h3><p class="carousel-slide-sub">Deo Colônia + Body Spray + Shower Gel — O Boticário</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/hJWSsxCj/IMG-8624.jpg','O Boticário','Malbec<br>Black','Deo Colônia + Body Spray + Shower Gel','Kit','')">Ver detalhes</button></div></div><div class="carousel-slide"><img fetchpriority="low" decoding="async" loading="lazy" class="carousel-slide-img" src="https://i.ibb.co/jvzMhkHD/IMG-8623.jpg" alt="Floratta Red Kit"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">✦ Kit Feminino</p><h3 class="carousel-slide-name">Floratta<br>Red</h3><p class="carousel-slide-sub">Perfume + Creme + Sabonete Líquido — O Boticário</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/jvzMhkHD/IMG-8623.jpg','O Boticário','Floratta<br>Red','Perfume + Creme + Sabonete Líquido','Kit','pink')">Ver detalhes</button></div></div><div class="carousel-slide"><img fetchpriority="low" decoding="async" loading="lazy" class="carousel-slide-img" src="https://i.ibb.co/20Szm5nY/IMG-8847.jpg" alt="Kit Noite Encantada"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">🌸 Dia das Mães</p><h3 class="carousel-slide-name">Noite<br>Encantada</h3><p class="carousel-slide-sub">Cuide-se Bem Boa Noite Body Splash + Hidratante Ameixa e Praliné</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/20Szm5nY/IMG-8847.jpg','Kit Dia das Mães','Noite<br>Encantada','Cuide-se Bem Boa Noite Body Splash + Eudora Instance Ameixa e Praliné Hidratante 350ml','🌸 Kit Especial','pink')">Ver detalhes</button></div></div><div class="carousel-slide"><img fetchpriority="low" decoding="async" loading="lazy" class="carousel-slide-img" src="https://i.ibb.co/Y9zrp0Q/IMG-8852.jpg" alt="Kit Volume e Brilho"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">🌸 Dia das Mães</p><h3 class="carousel-slide-name">Volume<br>& Brilho</h3><p class="carousel-slide-sub">Siàge — Shampoo + Condicionador + Máscara + Sérum + Mousse</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/Y9zrp0Q/IMG-8852.jpg','Kit Dia das Mães','Volume<br>& Brilho','Eudora Siàge Volume Imediato — Shampoo + Condicionador + Máscara + Sérum + Mousse','🌸 Kit Especial','pink')">Ver detalhes</button></div></div><div class="carousel-slide"><img fetchpriority="low" decoding="async" loading="lazy" class="carousel-slide-img" src="https://i.ibb.co/rG8w4Rwn/IMG-8843.jpg" alt="Coffee Woman Seduction Kit"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">✦ Kit Feminino</p><h3 class="carousel-slide-name">Coffee Woman<br>Seduction</h3><p class="carousel-slide-sub">Deo Parfum + Hidratante + Sabonete Líquido — O Boticário</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/rG8w4Rwn/IMG-8843.jpg','O Boticário','Coffee Woman<br>Seduction','Kit Deo Parfum + Hidratante + Sabonete Líquido','Kit','pink')">Ver detalhes</button></div></div><div class="carousel-slide"><img fetchpriority="low" decoding="async" loading="lazy" class="carousel-slide-img" src="https://i.ibb.co/nsKsWX9R/IMG-8885.jpg" alt="Kit Floratta Red Passion"><div class="carousel-slide-overlay"></div><div class="carousel-slide-content"><p class="carousel-slide-eyebrow">✦ Kit Feminino</p><h3 class="carousel-slide-name">Floratta<br>Red Passion</h3><p class="carousel-slide-sub">Deo Parfum + Hidratante — Floratta · O Boticário</p><button class="carousel-slide-cta" onclick="openProdModal('https://i.ibb.co/nsKsWX9R/IMG-8885.jpg','Floratta · O Boticário','Kit Floratta<br>Red Passion','Deo Parfum + Hidratante · Feminino','Kit','pink')">Ver detalhes</button></div></div></div><div class="carousel-arrows"><button class="carousel-arrow" onclick="carouselPrev()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button><button class="carousel-arrow" onclick="carouselNext()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button></div><div class="carousel-dots" id="carouselDots"><button class="carousel-dot active" onclick="carouselGoTo(0)"></button><button class="carousel-dot" onclick="carouselGoTo(1)"></button><button class="carousel-dot" onclick="carouselGoTo(2)"></button><button class="carousel-dot" onclick="carouselGoTo(3)"></button><button class="carousel-dot" onclick="carouselGoTo(4)"></button><button class="carousel-dot" onclick="carouselGoTo(5)"></button><button class="carousel-dot" onclick="carouselGoTo(6)"></button></div><div class="carousel-progress" id="carouselProgress"></div></div><div class="section-ornament reveal">· · ✦ · ·</div><div class="section-header reveal"><p class="section-label">✦ Coleção</p><h2 class="section-title">Fragrâncias & Beleza</h2></div><div class="catalog" id="colecaoGrid"></div><footer class="footer"><div class="footer-brand">Tania Parfum</div><div class="footer-line"></div><p class="footer-owner">Tânia</p><p class="footer-owner-role">Proprietária</p><div class="footer-line"></div><p class="footer-contact">
 Onde a fragrância tem seu estilo<br><br><a href="https://wa.me/5562991930771?text=Olá%20Tânia!%20Vi%20seu%20catálogo%20e%20tenho%20interesse%20em%20um%20produto%20😊" target="_blank" class="whatsapp-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:8px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 (62) 99193-0771 — Fale comigo no WhatsApp
-</a></p><p class="footer-note">© 2025 Tania Parfum · Tânia — Todos os direitos reservados</p></footer></div><div id="maes" class="tab-panel"><div class="maes-hero"><span class="maes-badge">✦ Edição Especial</span><h2 class="maes-title">Dia das<br>Mães</h2><p class="maes-sub">Presentes que tocam o coração</p><div style="width:50px;height:1px;background:linear-gradient(to right,transparent,#c8808a,transparent);margin:0 auto;"></div></div><div class="maes-grid"><div class="maes-card" data-pid="42" style="cursor:pointer;" onclick="openProdModal(
-'https://i.ibb.co/20Szm5nY/IMG-8847.jpg',
-'Kit Dia das Mães',
-'Noite<br>Encantada',
-'Cuide-se Bem Boa Noite Body Splash + Eudora Instance Ameixa e Praliné Hidratante 350ml',
-'🌸 Kit Especial',
-'pink'
-)"><div class="product-img-wrap"><img loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" decoding="async" data-src="https://i.ibb.co/20Szm5nY/IMG-8847.jpg" alt="Kit Noite Encantada"><div class="product-overlay"></div></div><div class="product-info"><p class="product-brand">Kit Dia das Mães</p><h3 class="product-name">Noite<br>Encantada</h3><p class="product-sub">Boa Noite Body Splash + Hidratante Ameixa e Praliné</p></div></div><div class="maes-card" data-pid="43" style="cursor:pointer;" onclick="openProdModal(
+</a></p><p class="footer-note">© 2025 Tania Parfum · Tânia — Todos os direitos reservados</p></footer></div><div id="maes" class="tab-panel"><div class="maes-hero"><span class="maes-badge">✦ Edição Especial</span><h2 class="maes-title">Dia das<br>Mães</h2><p class="maes-sub">Presentes que tocam o coração</p><div style="width:50px;height:1px;background:linear-gradient(to right,transparent,#c8808a,transparent);margin:0 auto;"></div></div><div class="maes-grid" id="maesGrid"></div></div><div class="product-info"><p class="product-brand">Kit Dia das Mães</p><h3 class="product-name">Noite<br>Encantada</h3><p class="product-sub">Boa Noite Body Splash + Hidratante Ameixa e Praliné</p></div></div><div class="maes-card" data-pid="43" style="cursor:pointer;" onclick="openProdModal(
 'https://i.ibb.co/F4NNX7fj/IMG-8848.jpg',
 'Kit Dia das Mães',
 'Frescor<br>Tropical',
@@ -192,7 +189,7 @@ Onde a fragrância tem seu estilo<br><br><a href="https://wa.me/5562991930771?te
 'Natura Tododia Flores — Creme para o Corpo Flor de Pêssego e Jasmim',
 '🌸 Kit Especial',
 'pink'
-)"><div class="product-img-wrap"><img loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" decoding="async" data-src="https://i.ibb.co/MxS6h2Xt/IMG-8864.jpg" alt="Kit Com Carinho"><div class="product-overlay"></div></div><div class="product-info"><p class="product-brand">Kit Dia das Mães</p><h3 class="product-name">Com<br>Carinho</h3><p class="product-sub">Natura Tododia Flores — Creme para o Corpo Flor de Pêssego e Jasmim</p></div></div></div></div><div class="prod-modal" id="prodModal" onclick="closeProdModalBg(event)"><div class="prod-modal-inner"><button class="prod-modal-close" onclick="closeProdModal()">✕</button><img decoding="async" class="prod-modal-img" id="modalImg" src="" alt=""><div class="prod-modal-body"><span class="prod-modal-badge" id="modalBadge" style="display:none"></span><p class="prod-modal-brand" id="modalBrand"></p><h3 class="prod-modal-name" id="modalName"></h3><p class="prod-modal-sub" id="modalSub"></p><button class="cart-modal-add" id="modalCartBtn" onclick="toggleModalFav()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span id="modalCartText">Adicionar ao carrinho</span></button><a class="prod-modal-wa" id="modalWaBtn" href="#" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="18" height="18"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.74 5.494 2.035 7.807L0 32l8.418-2.007A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.765-1.847l-.485-.287-5.003 1.194 1.234-4.867-.317-.5A13.265 13.265 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.874c-.398-.199-2.355-1.162-2.72-1.295-.365-.133-.631-.199-.897.2-.266.398-1.03 1.295-1.263 1.561-.232.266-.465.3-.863.1-.398-.2-1.681-.619-3.202-1.977-1.183-1.056-1.982-2.36-2.214-2.758-.232-.399-.025-.614.174-.812.179-.178.398-.465.597-.698.2-.232.266-.398.399-.664.133-.266.066-.498-.033-.697-.1-.2-.897-2.162-1.229-2.96-.324-.778-.653-.673-.897-.685l-.764-.013c-.266 0-.698.1-1.063.498-.365.399-1.396 1.363-1.396 3.325s1.43 3.857 1.629 4.123c.2.266 2.814 4.297 6.82 6.026.953.412 1.697.658 2.277.842.957.305 1.828.262 2.516.159.767-.114 2.355-.963 2.688-1.893.332-.93.332-1.727.232-1.893-.099-.166-.365-.266-.763-.465z"/></svg>Quero saber o valor</a><button class="prod-modal-share" id="modalShareBtn" onclick="compartilharProduto()"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Indicar para uma amiga</button></div></div></div><div id="todos" class="tab-panel"><div class="todos-hero"><h2 class="todos-title">Catálogo Completo</h2><p class="todos-sub">Toque em um produto para ver os detalhes</p><div style="width:50px;height:1px;background:linear-gradient(to right,transparent,#C9A84C,transparent);margin:20px auto 0;"></div></div><div class="todos-search-wrap" id="todosSearchWrap"><svg class="todos-search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input class="todos-search" id="todosSearch" type="text" placeholder="Buscar por nome..." autocomplete="off"><button class="todos-search-clear" id="todosSearchClear" onclick="clearTodosSearch()">✕</button><div class="todos-search-info" id="todosSearchInfo"></div></div><div class="filter-bar"><button class="filter-btn active" onclick="filtrarProdutos('todos', this)">✦ Todos</button><button class="filter-btn" onclick="filtrarProdutos('feminino', this)">🌸 Feminino</button><button class="filter-btn" onclick="filtrarProdutos('masculino', this)">🔷 Masculino</button><button class="filter-btn" onclick="filtrarProdutos('kit', this)">🎁 Kits</button><button class="filter-btn" onclick="filtrarProdutos('perfume', this)">✨ Perfumes</button><button class="filter-btn" onclick="filtrarProdutos('hidratante', this)">💧 Hidratantes</button><button class="filter-btn" onclick="filtrarProdutos('cabelo', this)">💆 Cabelo</button><button class="filter-btn" onclick="filtrarProdutos('sabonete', this)">🧼 Sabonetes</button></div><div class="todos-grid" id="todosGrid"><div class="filter-empty" id="filterEmpty">Nenhum produto encontrado nesta categoria</div></div></div>
+)"><div class="product-img-wrap"><img loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" decoding="async" data-src="https://i.ibb.co/MxS6h2Xt/IMG-8864.jpg" alt="Kit Com Carinho"><div class="product-overlay"></div></div><div class="product-info"><p class="product-brand">Kit Dia das Mães</p><h3 class="product-name">Com<br>Carinho</h3><p class="product-sub">Natura Tododia Flores — Creme para o Corpo Flor de Pêssego e Jasmim</p></div></div></div></div><div class="prod-modal" id="prodModal" onclick="closeProdModalBg(event)"><div class="prod-modal-inner"><button class="prod-modal-close" onclick="closeProdModal()">✕</button><img decoding="async" class="prod-modal-img" id="modalImg" src="" alt=""><div class="prod-modal-body"><span class="prod-modal-badge" id="modalBadge" style="display:none"></span><p class="prod-modal-brand" id="modalBrand"></p><h3 class="prod-modal-name" id="modalName"></h3><p class="prod-modal-sub" id="modalSub"></p><div id="modalPriceWrap" class="prod-modal-price-wrap"><p class="prod-modal-price-label">✦ Valor</p><p class="prod-modal-price-val" id="modalPriceVal"></p></div><button class="cart-modal-add" id="modalCartBtn" onclick="toggleModalFav()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span id="modalCartText">Adicionar ao carrinho</span></button><a class="prod-modal-wa" id="modalWaBtn" href="#" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="18" height="18"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.74 5.494 2.035 7.807L0 32l8.418-2.007A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.765-1.847l-.485-.287-5.003 1.194 1.234-4.867-.317-.5A13.265 13.265 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.874c-.398-.199-2.355-1.162-2.72-1.295-.365-.133-.631-.199-.897.2-.266.398-1.03 1.295-1.263 1.561-.232.266-.465.3-.863.1-.398-.2-1.681-.619-3.202-1.977-1.183-1.056-1.982-2.36-2.214-2.758-.232-.399-.025-.614.174-.812.179-.178.398-.465.597-.698.2-.232.266-.398.399-.664.133-.266.066-.498-.033-.697-.1-.2-.897-2.162-1.229-2.96-.324-.778-.653-.673-.897-.685l-.764-.013c-.266 0-.698.1-1.063.498-.365.399-1.396 1.363-1.396 3.325s1.43 3.857 1.629 4.123c.2.266 2.814 4.297 6.82 6.026.953.412 1.697.658 2.277.842.957.305 1.828.262 2.516.159.767-.114 2.355-.963 2.688-1.893.332-.93.332-1.727.232-1.893-.099-.166-.365-.266-.763-.465z"/></svg><span id="modalWaLabel">Quero saber o valor</span></a><button class="prod-modal-share" id="modalShareBtn" onclick="compartilharProduto()"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Indicar para uma amiga</button></div></div></div><div id="todos" class="tab-panel"><div class="todos-hero"><h2 class="todos-title">Catálogo Completo</h2><p class="todos-sub">Toque em um produto para ver os detalhes</p><div style="width:50px;height:1px;background:linear-gradient(to right,transparent,#C9A84C,transparent);margin:20px auto 0;"></div></div><div class="todos-search-wrap" id="todosSearchWrap"><svg class="todos-search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input class="todos-search" id="todosSearch" type="text" placeholder="Buscar por nome..." autocomplete="off"><button class="todos-search-clear" id="todosSearchClear" onclick="clearTodosSearch()">✕</button><div class="todos-search-info" id="todosSearchInfo"></div></div><div class="filter-bar"><button class="filter-btn active" onclick="filtrarProdutos('todos', this)">✦ Todos</button><button class="filter-btn" onclick="filtrarProdutos('feminino', this)">🌸 Feminino</button><button class="filter-btn" onclick="filtrarProdutos('masculino', this)">🔷 Masculino</button><button class="filter-btn" onclick="filtrarProdutos('kit', this)">🎁 Kits</button><button class="filter-btn" onclick="filtrarProdutos('perfume', this)">✨ Perfumes</button><button class="filter-btn" onclick="filtrarProdutos('hidratante', this)">💧 Hidratantes</button><button class="filter-btn" onclick="filtrarProdutos('cabelo', this)">💆 Cabelo</button><button class="filter-btn" onclick="filtrarProdutos('sabonete', this)">🧼 Sabonetes</button></div><div class="todos-grid" id="todosGrid"><div class="filter-empty" id="filterEmpty">Nenhum produto encontrado nesta categoria</div></div></div>
 <script>(function() {
 const observer = new IntersectionObserver(function(entries) {
 entries.forEach(function(entry) {
@@ -285,15 +282,53 @@ img.removeAttribute('data-src');
 }
 }
 var _currentModalProd = null;
-function openProdModal(imgSrc, brand, name, sub, badge, badgeClass) {
-_currentModalProd = { img: imgSrc, brand: brand, name: name, sub: sub };
+function openProdModal(imgSrc, brand, name, sub, badge, badgeClass, price, pid) {
+// Pega pid do interceptor de clique se não foi passado diretamente
+if (!pid && window._pendingPid) { pid = window._pendingPid; }
+window._pendingPid = null;
+// Busca preço no Firebase se não veio direto
+if (!price && window._precosFirebase) {
+  if (pid) {
+    var raw = window._precosFirebase[pid];
+    if (raw) price = 'R$ ' + parseFloat(raw).toFixed(2).replace('.',',');
+  }
+  if (!price && window._fbCustomProducts) {
+    var nName = (name||'').replace(/<br\s*\/?>/gi,' ').trim().toLowerCase();
+    var nBrand = (brand||'').trim().toLowerCase();
+    Object.keys(window._fbCustomProducts).forEach(function(k){
+      var fp = window._fbCustomProducts[k];
+      if (!fp || !fp.price) return;
+      if ((fp.brand||'').trim().toLowerCase() === nBrand &&
+          (fp.name||'').replace(/<br\s*\/?>/gi,' ').trim().toLowerCase() === nName) {
+        price = 'R$ ' + parseFloat(fp.price).toFixed(2).replace('.',',');
+      }
+    });
+  }
+}
+_currentModalProd = { img: imgSrc, brand: brand, name: name, sub: sub, price: price||'' };
 document.getElementById('modalImg').src = imgSrc;
 document.getElementById('modalImg').alt = name.replace(/<br>/g,' ');
 document.getElementById('modalBrand').textContent = brand;
 document.getElementById('modalName').innerHTML = name;
 document.getElementById('modalSub').textContent = sub;
 var nomeProduto = (brand + ' ' + name.replace(/<br>/g,' ')).trim();
-var msg = 'Olá Tânia! 🌸 Vi o catálogo Tania Parfum e gostaria de saber o valor de: ' + nomeProduto;
+var showPrice = !!(price && window._mostrarPrecos !== false);
+var priceWrap = document.getElementById('modalPriceWrap');
+var priceVal  = document.getElementById('modalPriceVal');
+var waLabel   = document.getElementById('modalWaLabel');
+if (priceWrap && priceVal) {
+  if (showPrice) { priceVal.textContent = price; priceWrap.style.display = 'block'; }
+  else { priceWrap.style.display = 'none'; }
+}
+var msg, labelTxt;
+if (showPrice) {
+  labelTxt = '✦ Quero este produto';
+  msg = 'Olá Tânia! 🌸 Vi o catálogo Tania Parfum e quero fazer um pedido de: ' + nomeProduto + ' — ' + price;
+} else {
+  labelTxt = 'Quero saber o valor';
+  msg = 'Olá Tânia! 🌸 Vi o catálogo Tania Parfum e gostaria de saber o valor de: ' + nomeProduto;
+}
+if (waLabel) waLabel.textContent = labelTxt;
 document.getElementById('modalWaBtn').href = 'https://wa.me/5562991930771?text=' + encodeURIComponent(msg);
 const b = document.getElementById('modalBadge');
 if (badge) {
@@ -304,12 +339,20 @@ b.style.display = 'inline-block';
 b.style.display = 'none';
 }
 document.getElementById('prodModal').classList.add('open');
-document.body.style.overflow = 'hidden';
+window._savedScrollY = window.scrollY;
+document.body.style.position = 'fixed';
+document.body.style.top = '-' + window.scrollY + 'px';
+document.body.style.width = '100%';
 syncModalCartBtn();
 }
 function closeProdModal() {
 document.getElementById('prodModal').classList.remove('open');
-document.body.style.overflow = '';
+var sy = window._savedScrollY || 0;
+document.body.style.position = '';
+document.body.style.top = '';
+document.body.style.width = '';
+window.scrollTo(0, sy);
+window._savedScrollY = 0;
 }
 function closeProdModalBg(e) {
 if (e.target === document.getElementById('prodModal')) closeProdModal();
@@ -321,30 +364,7 @@ function compartilharProduto() {
   var encoded = encodeURIComponent(msg);
   window.location.href = 'whatsapp://send?text=' + encoded;
 }
-var TODOS_PRODUCTS = [{"categoria":"feminino kit perfume","img":"https://i.ibb.co/rG8w4Rwn/IMG-8843.jpg","brand":"O Boticário","name":"Coffee Woman<br>Seduction","sub":"Kit Deo Parfum + Hidratante + Sabonete Líquido","badge":"Kit","badgeClass":"pink","alt":"Coffee Woman Seduction","cardBrand":"O Boticário","cardName":"Coffee Woman Seduction"},{"categoria":"masculino kit perfume","img":"https://i.ibb.co/kghQGnpz/IMG-8846.jpg","brand":"O Boticário","name":"Clash<br>Kit","sub":"Deo Parfum + Creme Pré e Pós-Barba · Masculino","badge":"Kit","badgeClass":"","alt":"Clash Kit","cardBrand":"O Boticário","cardName":"Clash Kit"},{"categoria":"masculino perfume","img":"https://i.ibb.co/PvVzQbbk/IMG-8845.jpg","brand":"O Boticário","name":"Quasar<br>Blue","sub":"Deo Parfum Masculino","badge":"Masculino","badgeClass":"","alt":"Quasar Blue","cardBrand":"O Boticário","cardName":"Quasar Blue"},{"categoria":"feminino perfume","img":"https://i.ibb.co/Ktg2Gnt/IMG-8844.jpg","brand":"O Boticário","name":"Egeo<br>Choc","sub":"Deo Parfum 90ml · Feminino","badge":"Feminino","badgeClass":"pink","alt":"Egeo Choc","cardBrand":"O Boticário","cardName":"Egeo Choc"},{"categoria":"feminino perfume","img":"https://i.ibb.co/ZpwCQdXY/IMG-8870.jpg","brand":"Floratta · O Boticário","name":"Floratta","sub":"Deo Parfum Feminino — Rose · Flores Secretas · Red · My Blue","badge":"Feminino","badgeClass":"pink","alt":"Floratta","cardBrand":"Floratta · O Boticário","cardName":"Floratta"},{"categoria":"masculino perfume","img":"https://i.ibb.co/twdw4cSn/IMG-8871.jpg","brand":"Eudora","name":"Club 6<br>Spotlight","sub":"Deo Parfum Masculino","badge":"Masculino","badgeClass":"","alt":"Club 6 Spotlight","cardBrand":"Eudora","cardName":"Club 6 Spotlight"},{"categoria":"masculino perfume","img":"https://i.ibb.co/DfQ2DF4v/IMG-8872.jpg","brand":"O Boticário","name":"Uomini<br>Spirit","sub":"Deo Parfum Masculino","badge":"Masculino","badgeClass":"","alt":"Uomini Spirit","cardBrand":"O Boticário","cardName":"Uomini Spirit"},{"categoria":"masculino perfume","img":"https://i.ibb.co/PvtFVVJP/IMG-8873.jpg","brand":"O Boticário","name":"Egeo<br>Spicy Vibe","sub":"Deo Parfum Masculino","badge":"Masculino","badgeClass":"","alt":"Egeo Spicy Vibe","cardBrand":"O Boticário","cardName":"Egeo Spicy Vibe"},{"categoria":"masculino perfume","img":"https://i.ibb.co/F4yKsVks/IMG-8874.jpg","brand":"O Boticário","name":"Egeo<br>Blue","sub":"Deo Parfum Masculino","badge":"Masculino","badgeClass":"","alt":"Egeo Blue","cardBrand":"O Boticário","cardName":"Egeo Blue"},{"categoria":"masculino perfume","img":"https://i.ibb.co/mry8z1vN/IMG-8875.jpg","brand":"O Boticário","name":"Malbec","sub":"Deo Parfum Masculino — Black Legend · Magnetic · Gold · Black","badge":"Masculino","badgeClass":"","alt":"Malbec","cardBrand":"O Boticário","cardName":"Malbec"},{"categoria":"masculino perfume","img":"https://i.ibb.co/1Gj3ZfN5/IMG-8876.jpg","brand":"O Boticário","name":"Portinari","sub":"Deo Parfum Masculino","badge":"Masculino","badgeClass":"","alt":"Portinari","cardBrand":"O Boticário","cardName":"Portinari"},{"categoria":"masculino perfume","img":"https://i.ibb.co/5hTwfF7d/IMG-8878.jpg","brand":"O Boticário","name":"Arbo","sub":"Deo Parfum Masculino","badge":"Masculino","badgeClass":"","alt":"Arbo","cardBrand":"O Boticário","cardName":"Arbo"},{"categoria":"feminino perfume","img":"https://i.ibb.co/6K8KcY0/IMG-8880.jpg","brand":"Acordes","name":"Perfume<br>Arabesco","sub":"Deo Parfum · Frasco Transparente com Arabescos Azuis","badge":"Feminino","badgeClass":"pink","alt":"Perfume Arabesco Azul","cardBrand":"Acordes","cardName":"Perfume Arabesco"},{"categoria":"feminino perfume","img":"https://i.ibb.co/ZzH3HDzB/IMG-8881.jpg","brand":"O Boticário","name":"Linda<br>Felicidade","sub":"Deo Parfum Feminino","badge":"Feminino","badgeClass":"pink","alt":"Linda Felicidade","cardBrand":"O Boticário","cardName":"Linda Felicidade"},{"categoria":"masculino perfume","img":"https://i.ibb.co/PsSyBwvb/IMG-8882.jpg","brand":"Natura","name":"Kaiak","sub":"Deo Parfum Masculino — Urbe · Pulso · Extremo","badge":"Masculino","badgeClass":"","alt":"Kaiak","cardBrand":"Natura","cardName":"Kaiak"},{"categoria":"feminino perfume","img":"https://i.ibb.co/yFk8xMMx/IMG-8883.jpg","brand":"Natura","name":"Anni · Acqua Fresca<br>· Free","sub":"Deo Parfum Feminino","badge":"Feminino","badgeClass":"pink","alt":"Anni Acqua Fresca Free","cardBrand":"Natura","cardName":"Anni · Acqua Fresca · Free"},{"categoria":"feminino perfume","img":"https://i.ibb.co/pjDd9DQJ/IMG-8884.jpg","brand":"Eudora","name":"Velvet Sensual<br>+ Velvet Inspire","sub":"Deo Parfum Feminino","badge":"Feminino","badgeClass":"pink","alt":"Velvet Sensual Velvet Inspire","cardBrand":"Eudora","cardName":"Velvet Sensual + Velvet Inspire"},{"categoria":"feminino kit perfume","img":"https://i.ibb.co/nsKsWX9R/IMG-8885.jpg","brand":"Floratta · O Boticário","name":"Kit Floratta<br>Red Passion","sub":"Deo Parfum + Hidratante · Feminino","badge":"Kit","badgeClass":"pink","alt":"Kit Floratta Red Passion","cardBrand":"Floratta · O Boticário","cardName":"Kit Floratta Red Passion"},{"categoria":"feminino kit perfume","img":"https://i.ibb.co/Vc9frB8Y/IMG-8886.jpg","brand":"Floratta · O Boticário","name":"Kit Floratta<br>Red","sub":"Deo Parfum + Loção + Sabonete · Feminino","badge":"Kit","badgeClass":"pink","alt":"Kit Floratta Red","cardBrand":"Floratta · O Boticário","cardName":"Kit Floratta Red"},{"categoria":"feminino perfume","img":"https://i.ibb.co/KcQNPq0f/IMG-8887.jpg","brand":"Natura","name":"Ilia Flor de<br>Laranjeira","sub":"Deo Parfum Feminino","badge":"Feminino","badgeClass":"pink","alt":"Ilia Flor de Laranjeira","cardBrand":"Natura","cardName":"Ilia Flor de Laranjeira"},{"categoria":"feminino perfume","img":"https://i.ibb.co/dwChYGwh/IMG-8888.jpg","brand":"O Boticário","name":"Glamour<br>Fever","sub":"Deo Parfum Feminino","badge":"Feminino","badgeClass":"pink","alt":"Glamour Fever","cardBrand":"O Boticário","cardName":"Glamour Fever"},{"categoria":"feminino hidratante","img":"https://i.ibb.co/Xx9NVGXH/IMG-8889.jpg","brand":"O Boticário","name":"Cuide-se Bem<br>Deleite","sub":"Loção Hidratante 400ml · Feminino","badge":"Hidratante","badgeClass":"pink","alt":"Cuide-se Bem Deleite","cardBrand":"O Boticário","cardName":"Cuide-se Bem Deleite"},{"categoria":"feminino perfume","img":"https://i.ibb.co/Cp4MYbWG/IMG-8890.jpg","brand":"O Boticário","name":"Glamour<br>Myriad","sub":"Deo Parfum Feminino","badge":"Feminino","badgeClass":"pink","alt":"Glamour Myriad","cardBrand":"O Boticário","cardName":"Glamour Myriad"},
-{"categoria":"feminino kit perfume","img":"https://i.ibb.co/4gWWMYzf/IMG-8926.jpg","brand":"O Boticário","name":"Egeo Choc<br>Kit","sub":"Perfume + Calda de Banho Sabonete Líquido 150ml","badge":"Kit","badgeClass":"pink","alt":"Egeo Choc Kit","cardBrand":"O Boticário","cardName":"Egeo Choc Kit"},
-{"categoria":"feminino hidratante","img":"https://i.ibb.co/cX8tRBQL/IMG-8910.jpg","brand":"O Boticário","name":"Linha<br>Lily","sub":"Cremes Acetinados — Cashmere · Lumière · Love Lily · Solvere · 250g","badge":"Hidratante","badgeClass":"pink","alt":"Linha Lily Cremes","cardBrand":"O Boticário","cardName":"Linha Lily"},
-{"categoria":"feminino hidratante","img":"https://i.ibb.co/LD015pJ1/IMG-8912.jpg","brand":"O Boticário","name":"Linda · Floratta<br>· Glamour","sub":"Cremes Hidratantes Desodorantes 200ml — Irresistível · Rose · Secrets Black","badge":"Hidratante","badgeClass":"pink","alt":"Cremes Hidratantes","cardBrand":"O Boticário","cardName":"Linda · Floratta · Glamour"},
-{"categoria":"feminino perfume","img":"https://i.ibb.co/BHp34R1w/IMG-8914.jpg","brand":"O Boticário","name":"Her<br>Code","sub":"Eau de Parfum 50ml · Feminino","badge":"Feminino","badgeClass":"pink","alt":"Her Code EDP","cardBrand":"O Boticário","cardName":"Her Code"},
-{"categoria":"feminino perfume","img":"https://i.ibb.co/tPpk35Qh/IMG-8915.jpg","brand":"Eudora","name":"Royal","sub":"Eau de Parfum 75ml · Feminino","badge":"Feminino","badgeClass":"pink","alt":"Eudora Royal EDP","cardBrand":"Eudora","cardName":"Royal"},
-{"categoria":"masculino kit perfume","img":"https://i.ibb.co/jkWHHBX9/IMG-8919.jpg","brand":"O Boticário","name":"Connexion<br>Kit","sub":"Deo Parfum + Body Spray Desodorante · Masculino","badge":"Kit","badgeClass":"","alt":"Connexion Kit","cardBrand":"O Boticário","cardName":"Connexion Kit"},
-{"categoria":"masculino kit perfume","img":"https://i.ibb.co/8gzFvYth/IMG-8920.jpg","brand":"O Boticário","name":"Egeo Original<br>Kit","sub":"Perfume + Shower Gel 200g · Masculino","badge":"Kit","badgeClass":"","alt":"Egeo Original Kit","cardBrand":"O Boticário","cardName":"Egeo Original Kit"},
-{"categoria":"feminino kit hidratante","img":"https://i.ibb.co/BVJ67C5L/IMG-8921.jpg","brand":"O Boticário","name":"Lily Splash<br>Kit","sub":"Creme Hidratante 250g + Lily Splash 200ml","badge":"Kit","badgeClass":"pink","alt":"Lily Splash Kit","cardBrand":"O Boticário","cardName":"Lily Splash Kit"},
-{"categoria":"feminino kit hidratante","img":"https://i.ibb.co/BHMTbRsk/IMG-8922.jpg","brand":"O Boticário","name":"Cuide-se Bem<br>Deleite Kit","sub":"Body Splash 60ml + Creme Mãos 45g + Loção Hidratante 200ml","badge":"Kit","badgeClass":"pink","alt":"Cuide-se Bem Deleite Kit","cardBrand":"O Boticário","cardName":"Cuide-se Bem Deleite Kit"},
-{"categoria":"feminino kit perfume","img":"https://i.ibb.co/JF2VwYSy/IMG-8923.jpg","brand":"O Boticário","name":"Floratta Rose<br>Kit","sub":"Perfume + Creme Hidratante 200ml · Feminino","badge":"Kit","badgeClass":"pink","alt":"Floratta Rose Kit","cardBrand":"O Boticário","cardName":"Floratta Rose Kit"},
-{"categoria":"feminino kit perfume","img":"https://i.ibb.co/9mfcV6FC/IMG-8925.jpg","brand":"O Boticário","name":"Liz<br>Kit","sub":"Perfume + Creme Hidratante Desodorante Corporal 250g","badge":"Kit","badgeClass":"pink","alt":"Liz Kit","cardBrand":"O Boticário","cardName":"Liz Kit"},
-{"categoria":"feminino kit perfume","img":"https://i.ibb.co/HT1cfjMB/IMG-8928.jpg","brand":"O Boticário","name":"Celebre<br>Sua Força Kit","sub":"Perfume + Creme Hidratante de Mãos 50g · Floral Frutal","badge":"Kit","badgeClass":"pink","alt":"Celebre Sua Força Kit","cardBrand":"O Boticário","cardName":"Celebre Sua Força Kit"},
-{"categoria":"feminino kit perfume hidratante","img":"https://i.ibb.co/yc2CLczG/IMG-8960.jpg","brand":"O Boticário","name":"Glamour Secrets<br>Black Kit","sub":"Deo Parfum + Creme Hidratante Desodorante Corporal 200ml · Feminino","badge":"Kit","badgeClass":"pink","alt":"Glamour Secrets Black Kit","cardBrand":"O Boticário","cardName":"Glamour Secrets Black Kit"},
-{"categoria":"feminino hidratante","img":"https://i.ibb.co/cjK0nbP/IMG-8964.jpg","brand":"Eudora Instance","name":"Trio<br>Hidratantes","sub":"Ameixa e Praliné + Obsessão por Baunilha + Cereja e Amêndoas · Creme Hidratante 400ml","badge":"Hidratante","badgeClass":"pink","alt":"Eudora Instance Trio Hidratantes","cardBrand":"Eudora Instance","cardName":"Trio Hidratantes"},
-{"categoria":"feminino hidratante","img":"https://i.ibb.co/dssJgkPJ/IMG-8965.jpg","brand":"Natura Tododia","name":"Creme Prebiótico<br>Algodão","sub":"Creme para o Corpo Nutrição Prebiótica · Algodão 400ml","badge":"Hidratante","badgeClass":"pink","alt":"Natura Tododia Prebiótico Algodão","cardBrand":"Natura Tododia","cardName":"Creme Prebiótico Algodão"},
-{"categoria":"feminino hidratante","img":"https://i.ibb.co/svLLRSD2/IMG-8966.jpg","brand":"Nativa SPA · O Boticário","name":"Ameixa<br>Loção","sub":"Loção Nutritiva Desodorante · Óleo de Quinoa · Vegano 400ml","badge":"Hidratante","badgeClass":"pink","alt":"Nativa SPA Ameixa Loção","cardBrand":"Nativa SPA","cardName":"Ameixa — Loção Nutritiva"},
-{"categoria":"feminino hidratante","img":"https://i.ibb.co/MDJQSHTw/IMG-8967.jpg","brand":"Nativa SPA · O Boticário","name":"Uva Merlot<br>Loção","sub":"Loção Nutritiva Desodorante · Óleo de Quinoa 400ml","badge":"Hidratante","badgeClass":"pink","alt":"Nativa SPA Uva Merlot Loção","cardBrand":"Nativa SPA","cardName":"Uva Merlot — Loção Nutritiva"},
-{"categoria":"feminino hidratante","img":"https://i.ibb.co/YFyjzd1h/IMG-8968.jpg","brand":"Nativa SPA · O Boticário","name":"Uva Merlot<br>Refil","sub":"Loção Nutritiva Desodorante Refil · Óleo de Quinoa 350ml","badge":"Hidratante","badgeClass":"pink","alt":"Nativa SPA Uva Merlot Refil","cardBrand":"Nativa SPA","cardName":"Uva Merlot — Refil"},
-{"categoria":"feminino cabelo","img":"https://i.ibb.co/rR3cnw9M/IMG-8969.jpg","brand":"Eudora Siàge","name":"Nutri Rosé<br>Supreme Oil","sub":"Óleo Nutritivo 60ml · Proteção Térmica 230° · Elimina Pontas Duplas","badge":"Cabelo","badgeClass":"pink","alt":"Siàge Nutri Rosé Supreme Oil","cardBrand":"Eudora Siàge","cardName":"Nutri Rosé Supreme Oil"},
-{"categoria":"feminino sabonete","img":"https://i.ibb.co/xtT249cS/IMG-8970.jpg","brand":"Eudora Instance","name":"Frutas Vermelhas<br>Sabonetes","sub":"Sabonete Vegetal em Barra Perfumado · 4 unidades de 80g · Vegano","badge":"Beleza","badgeClass":"pink","alt":"Eudora Instance Frutas Vermelhas Sabonete","cardBrand":"Eudora Instance","cardName":"Frutas Vermelhas — Sabonete"},
-{"categoria":"feminino sabonete","img":"https://i.ibb.co/60P1nxV3/IMG-8971.jpg","brand":"Natura Tododia","name":"Sabonetes<br>Vegetal","sub":"Frutas Rojas (5×90g) + Tâmara e Canela (5×90g) · Base Vegetal","badge":"Beleza","badgeClass":"pink","alt":"Natura Tododia Sabonetes Vegetal","cardBrand":"Natura Tododia","cardName":"Sabonetes Vegetal"},
-{"categoria":"feminino perfume","img":"https://i.ibb.co/YFgdGm2t/IMG-8973.jpg","brand":"O Boticário","name":"Egeo<br>Dolce","sub":"Body Spray Desodorante 100ml · Feminino","badge":"Feminino","badgeClass":"pink","alt":"Egeo Dolce Body Spray","cardBrand":"O Boticário","cardName":"Egeo Dolce"},
-{"categoria":"feminino perfume hidratante","img":"https://i.ibb.co/5xtYYf0V/IMG-8972.jpg","brand":"O Boticário","name":"Cuide-se Bem<br>Body Splash Trio","sub":"Feira Cachos de Uva + Nuvem + Pessegura · Body Splash 200ml cada","badge":"Feminino","badgeClass":"pink","alt":"Cuide-se Bem Trio Body Splash","cardBrand":"O Boticário","cardName":"Cuide-se Bem Trio Body Splash"}];
+var TODOS_PRODUCTS = [];
 var _todosRendered = false;
 var _currentFilter = 'todos';
 function buildTodosCard(p) {
@@ -398,16 +418,7 @@ _currentFilter = categoria;
 _origFiltrar(categoria, btn);
 };
 
-var BELEZA_PRODUCTS = [
-{"categoria":"kids","img":"https://i.ibb.co/YYXLdMC/IMG-8900.jpg","brand":"Dr. Botica · O Boticário","name":"Poção da<br>Coragem","sub":"Colônia Infantil 120ml · Courage Potion","badge":"Infantil","badgeClass":"pink","alt":"Dr. Botica Poção da Coragem","cardBrand":"Dr. Botica","cardName":"Poção da Coragem"},
-{"categoria":"kids","img":"https://i.ibb.co/rf4xC2pg/IMG-8901.jpg","brand":"Dr. Botica · O Boticário","name":"Banho de Coração<br>+ Banho de Coragem","sub":"Sabonete Barra Espuma Cremosa 3x80g cada","badge":"Infantil","badgeClass":"pink","alt":"Dr. Botica Banho de Coração e Coragem","cardBrand":"Dr. Botica","cardName":"Banho de Coração + Coragem"},
-{"categoria":"kids cuidados","img":"https://i.ibb.co/zhbjS0xb/IMG-8902.jpg","brand":"Dr. Botica · O Boticário","name":"Poção das<br>Nuvens","sub":"Loção Hidratante Infantil 400ml · Até 48h de Hidratação","badge":"Infantil","badgeClass":"pink","alt":"Dr. Botica Poção das Nuvens","cardBrand":"Dr. Botica","cardName":"Poção das Nuvens"},
-{"categoria":"kids cuidados","img":"https://i.ibb.co/8nBgMm03/IMG-8903.jpg","brand":"Natura","name":"Mamãe<br>e Bebê","sub":"Água de Colônia 100ml · Sem Álcool","badge":"Infantil","badgeClass":"pink","alt":"Natura Mamãe e Bebê","cardBrand":"Natura","cardName":"Mamãe e Bebê"},
-{"categoria":"kids cuidados","img":"https://i.ibb.co/9kMBYb58/IMG-8904.jpg","brand":"Boti Baby · O Boticário","name":"Kit Boti<br>Baby","sub":"Condicionador Suave + Shampoo Suave + Loção Banho & Pós Banho — 400ml cada","badge":"Infantil","badgeClass":"pink","alt":"Boti Baby Kit","cardBrand":"Boti Baby","cardName":"Kit Boti Baby"},
-{"categoria":"kids cuidados","img":"https://i.ibb.co/svgqSRXQ/IMG-8905.jpg","brand":"Boti Baby · O Boticário","name":"Sabonete Líquido<br>de Glicerina","sub":"Cabeça aos Pés · Sem Lágrimas · 200ml","badge":"Infantil","badgeClass":"pink","alt":"Boti Baby Sabonete Líquido","cardBrand":"Boti Baby","cardName":"Sabonete Líquido Glicerina"},
-{"categoria":"kids","img":"https://i.ibb.co/nNTMpJFh/IMG-8906.jpg","brand":"Boti Baby · O Boticário","name":"Colônia<br>da Lua","sub":"100ml · Sem Álcool · Tecnologia DreamSleep","badge":"Infantil","badgeClass":"pink","alt":"Boti Baby Colônia da Lua","cardBrand":"Boti Baby","cardName":"Colônia da Lua"},
-{"categoria":"kids","img":"https://i.ibb.co/8D8sh2zW/IMG-8907.jpg","brand":"Marvel x O Boticário","name":"Spider-Gwen<br>Sophie Kit","sub":"Perfume + Loção · Edição Especial Marvel 2025","badge":"Infantil","badgeClass":"pink","alt":"Spider-Gwen Sophie Kit","cardBrand":"Marvel x O Boticário","cardName":"Spider-Gwen Sophie Kit"}
-];
+var BELEZA_PRODUCTS = [];
 var _belezaRendered = false;
 var _belezaFilter = 'todos';
 
@@ -702,4 +713,306 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { clo
 
 </script>
 
-</body></html>
+<!-- Firebase SDK — Catálogo 100% dinâmico -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script>
+(function(){
+
+  var ABA_MAP = {
+    'todos':   { grid: '#todosGrid',   cls: 'todos-card'  },
+    'colecao': { grid: '#colecaoGrid', cls: 'product-card'},
+    'maes':    { grid: '#maesGrid',    cls: 'maes-card'   },
+    'beleza':  { grid: '#belezaGrid',  cls: 'beleza-card' },
+  };
+
+  var esgIds = [];
+  var mostrarPrecosCatalogo = true;
+  var precosFirebase = {};
+  window._precosFirebase = precosFirebase;
+  var allFbProducts = {};
+  window._fbCustomProducts = {};
+
+  function addOverlay(card){
+    if(!card||card.querySelector('.esg-overlay'))return;
+    var o=document.createElement('div');
+    o.className='esg-overlay';
+    o.textContent='📦 Esgotado';
+    o.style.cssText='position:absolute;inset:0;background:rgba(0,0,0,0.62);display:flex;align-items:center;justify-content:center;z-index:50;pointer-events:none;font-family:Montserrat,sans-serif;font-size:0.6rem;font-weight:600;letter-spacing:0.32em;text-transform:uppercase;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,0.8)';
+    card.appendChild(o);
+  }
+
+  function aplicarEsgotados(){
+    document.querySelectorAll('.esg-overlay').forEach(function(e){e.remove();});
+    if(!esgIds.length)return;
+    esgIds.forEach(function(id){
+      document.querySelectorAll('[data-pid="'+id+'"]').forEach(addOverlay);
+    });
+  }
+
+  function aplicarPrecos(){
+    document.querySelectorAll('[data-pid]').forEach(function(card){
+      var pid=parseInt(card.getAttribute('data-pid'));
+      if(!pid)return;
+      var priceEl=card.querySelector('.product-price');
+      if(!priceEl)return;
+      var price=precosFirebase[pid]||(allFbProducts[pid]&&allFbProducts[pid].price)||null;
+      if(!mostrarPrecosCatalogo){
+        priceEl.textContent='Consulte';priceEl.className='product-price no-price';
+      } else if(price){
+        priceEl.textContent='R$ '+parseFloat(price).toFixed(2).replace('.',',');
+        priceEl.className='product-price';
+      }
+    });
+    // Atualiza modal se aberto
+    var modal=document.getElementById('prodModal');
+    if(modal&&modal.classList.contains('open')&&window._currentModalProd){
+      var p=window._currentModalProd;
+      var pid=window._currentModalPid||0;
+      var price=precosFirebase[pid]||(allFbProducts[pid]&&allFbProducts[pid].price)||p.price||'';
+      var showPrice=!!(price&&mostrarPrecosCatalogo);
+      var priceWrap=document.getElementById('modalPriceWrap');
+      var priceVal=document.getElementById('modalPriceVal');
+      var waLabel=document.getElementById('modalWaLabel');
+      var waBtn=document.getElementById('modalWaBtn');
+      var nomeProduto=(p.brand+' '+p.name.replace(/<br>/gi,' ')).trim();
+      if(priceWrap&&priceVal){
+        if(showPrice){priceVal.textContent='R$ '+parseFloat(price).toFixed(2).replace('.',',');priceWrap.style.display='block';}
+        else{priceWrap.style.display='none';}
+      }
+      var msg,labelTxt;
+      if(showPrice){labelTxt='✦ Quero este produto';msg='Olá Tânia! 🌸 Vi o catálogo Tania Parfum e quero fazer um pedido de: '+nomeProduto+' — R$ '+parseFloat(price).toFixed(2).replace('.',',');}
+      else{labelTxt='Quero saber o valor';msg='Olá Tânia! 🌸 Vi o catálogo Tania Parfum e gostaria de saber o valor de: '+nomeProduto;}
+      if(waLabel)waLabel.textContent=labelTxt;
+      if(waBtn)waBtn.href='https://wa.me/5562991930771?text='+encodeURIComponent(msg);
+    }
+  }
+
+  function makeCard(p, cls){
+    var pid=p.id;
+    var foto=p.foto||'';
+    var price=precosFirebase[pid]||p.price||null;
+    var priceHtml=(mostrarPrecosCatalogo&&price)
+      ?'<span class="product-price">R$ '+parseFloat(price).toFixed(2).replace('.',',')+'</span>'
+      :'<span class="product-price no-price">Consulte</span>';
+    var badgeHtml=p.badge?'<span class="product-badge'+(p.badgeClass?' '+p.badgeClass:'')+'">'+p.badge+'</span>':'';
+
+    var el=document.createElement('div');
+    el.setAttribute('data-pid',pid);
+    el.style.cursor='pointer';
+
+    if(cls==='todos-card'||cls==='beleza-card'){
+      el.className=cls;
+      el.setAttribute('data-categoria',p.category||'');
+      el.innerHTML=
+        (foto?'<img loading="lazy" src="'+foto+'" alt="'+(p.name||'')+'">':'')+
+        '<div class="'+cls+'-info">'+
+          '<p class="'+cls+'-brand">'+(p.brand||'')+'</p>'+
+          '<p class="'+cls+'-name">'+(p.name||'')+'</p>'+
+        '</div>';
+      // Botão carrinho/favorito
+      if(typeof createHeartBtn==='function'){
+        el.insertBefore(createHeartBtn(p.brand||'',p.name||'',p.sub||'',foto),el.firstChild);
+      }
+    } else if(cls==='maes-card'){
+      el.className='maes-card';
+      el.innerHTML=
+        '<div class="product-img-wrap">'+
+          (foto?'<img loading="lazy" src="'+foto+'" alt="'+(p.name||'')+'">':'')+
+          '<div class="product-overlay"></div>'+
+        '</div>'+
+        badgeHtml+
+        '<div class="product-info">'+
+          '<p class="product-brand">'+(p.brand||'')+'</p>'+
+          '<h3 class="product-name">'+(p.name||'')+'</h3>'+
+          (p.sub?'<p class="product-sub">'+p.sub+'</p>':'')+
+          '<div class="product-details-row">'+priceHtml+'</div>'+
+        '</div>';
+      if(typeof createHeartBtn==='function'){
+        var wrap=el.querySelector('.product-img-wrap');
+        if(wrap)wrap.appendChild(createHeartBtn(p.brand||'',p.name||'',p.sub||'',foto));
+      }
+    } else {
+      el.className='product-card';
+      el.innerHTML=
+        '<div class="product-img-wrap">'+
+          (foto?'<img loading="lazy" src="'+foto+'" alt="'+(p.name||'')+'">':'')+
+          '<div class="product-overlay"></div>'+
+        '</div>'+
+        badgeHtml+
+        '<div class="product-info">'+
+          '<p class="product-brand">'+(p.brand||'')+'</p>'+
+          '<h3 class="product-name">'+(p.name||'')+'</h3>'+
+          (p.sub?'<p class="product-sub">'+p.sub+'</p>':'')+
+          '<div class="product-details-row">'+priceHtml+'</div>'+
+        '</div>';
+      if(typeof createHeartBtn==='function'){
+        var wrap=el.querySelector('.product-img-wrap');
+        if(wrap)wrap.appendChild(createHeartBtn(p.brand||'',p.name||'',p.sub||'',foto));
+      }
+    }
+
+    el.addEventListener('click',(function(prod){
+      return function(){
+        var pid=prod.id;
+        var price=precosFirebase[pid]||prod.price||'';
+        var priceStr=(mostrarPrecosCatalogo&&price)?'R$ '+parseFloat(price).toFixed(2).replace('.',','):'';
+        window._pendingPid=pid;
+        window._currentModalPid=pid;
+        openProdModal(prod.foto||'',prod.brand||'',prod.name||'',prod.sub||'',prod.badge||'',prod.badgeClass||'pink',priceStr,pid);
+      };
+    })(p));
+
+    return el;
+  }
+
+  function renderTodos(todos){
+    TODOS_PRODUCTS.length=0;
+    todos.forEach(function(p){
+      TODOS_PRODUCTS.push({
+        categoria:p.category||'feminino',img:p.foto||'',
+        brand:p.brand||'',name:p.name||'',sub:p.sub||'',
+        badge:p.badge||'',badgeClass:p.badgeClass||'',
+        alt:p.name||'',cardBrand:p.brand||'',cardName:p.name||''
+      });
+    });
+    _todosRendered=false;
+    if(document.getElementById('todos')&&document.getElementById('todos').classList.contains('active')){
+      var g=document.getElementById('todosGrid');
+      if(g) g.querySelectorAll('.todos-card').forEach(function(c){c.remove();});
+      renderTodosCards();
+    }
+  }
+
+  function renderBeleza(beleza){
+    BELEZA_PRODUCTS.length=0;
+    beleza.forEach(function(p){
+      BELEZA_PRODUCTS.push({
+        categoria:p.category||'kids',img:p.foto||'',
+        brand:p.brand||'',name:p.name||'',sub:p.sub||'',
+        badge:p.badge||'',badgeClass:p.badgeClass||'',
+        alt:p.name||'',cardBrand:p.brand||'',cardName:p.name||''
+      });
+    });
+    _belezaRendered=false;
+    if(document.getElementById('beleza')&&document.getElementById('beleza').classList.contains('active')){
+      var g=document.getElementById('belezaGrid');
+      if(g) g.querySelectorAll('.beleza-card').forEach(function(c){c.remove();});
+      renderBelezaCards();
+    }
+  }
+
+  function renderTudo(){
+    var colecao=[],maes=[],todos=[],beleza=[];
+    Object.keys(allFbProducts).forEach(function(id){
+      var p=allFbProducts[id];
+      if(!p||!p.foto)return;
+      var tab=p.catalogTab||'todos';
+      if(tab==='colecao')colecao.push(p);
+      else if(tab==='maes')maes.push(p);
+      else if(tab==='beleza')beleza.push(p);
+      else todos.push(p);
+    });
+    [colecao,maes,todos,beleza].forEach(function(arr){arr.sort(function(a,b){return a.id-b.id;});});
+
+    // Coleção
+    var colGrid=document.querySelector('#colecaoGrid');
+    if(colGrid){
+      colGrid.querySelectorAll('[data-pid]').forEach(function(c){c.remove();});
+      colecao.forEach(function(p){colGrid.appendChild(makeCard(p,'product-card'));});
+    }
+    // Mães
+    var maesGrid=document.querySelector('#maesGrid');
+    if(maesGrid){
+      maesGrid.querySelectorAll('[data-pid]').forEach(function(c){c.remove();});
+      maes.forEach(function(p){maesGrid.appendChild(makeCard(p,'maes-card'));});
+    }
+    // Todos e Beleza (lazy via arrays)
+    renderTodos(todos);
+    renderBeleza(beleza);
+
+    aplicarEsgotados();
+    aplicarPrecos();
+
+    // Animar cards novos
+    setTimeout(function(){
+      if(window._cardObs){
+        document.querySelectorAll('.product-card,.maes-card').forEach(function(c){
+          if(!c.classList.contains('card-animate')){
+            c.classList.add('card-animate');c.style.opacity='0';_cardObs.observe(c);
+          }
+        });
+      }
+    },80);
+  }
+
+  // ── Init Firebase ──
+  function initFB(){
+    if(typeof firebase==='undefined'){setTimeout(initFB,200);return;}
+    var app;
+    try{app=firebase.app();}catch(e){
+      app=firebase.initializeApp({databaseURL:'https://taniaparfum233-default-rtdb.firebaseio.com/'});
+    }
+    var db=firebase.database(app);
+
+    db.ref('esgotados').on('value',function(snap){
+      var d=snap.val()||{};
+      esgIds=Object.keys(d).filter(function(k){return d[k]===true;}).map(Number);
+      aplicarEsgotados();
+    });
+
+    db.ref('config/mostrarPrecos').on('value',function(snap){
+      var v=snap.val();
+      mostrarPrecosCatalogo=(v===null||v===true);
+      window._mostrarPrecos=mostrarPrecosCatalogo;
+      aplicarPrecos();
+    });
+
+    db.ref('precos').on('value',function(snap){
+      var d=snap.val()||{};
+      Object.keys(d).forEach(function(k){precosFirebase[parseInt(k)]=d[k];});
+      window._precosFirebase=precosFirebase;
+      aplicarPrecos();
+    });
+
+    db.ref('produtos_estaticos').on('value',function(snap){
+      var d=snap.val()||{};
+      Object.keys(d).forEach(function(id){allFbProducts[parseInt(id)]=d[id];});
+      mergeRender();
+    });
+
+    db.ref('produtos_custom').on('value',function(snap){
+      var d=snap.val()||{};
+      window._fbCustomProducts=d;
+      // Remove custom antigos do allFbProducts
+      Object.keys(allFbProducts).forEach(function(id){
+        if(allFbProducts[id]&&allFbProducts[id].custom&&!allFbProducts[id].static)delete allFbProducts[parseInt(id)];
+      });
+      Object.keys(d).forEach(function(id){allFbProducts[parseInt(id)]=d[id];});
+      mergeRender();
+    });
+
+    document.addEventListener('click',function(e){
+      var btn=e.target.closest('.tab-btn');
+      if(btn)setTimeout(function(){aplicarEsgotados();aplicarPrecos();},400);
+    });
+
+    setInterval(function(){
+      db.ref('esgotados').once('value',function(snap){
+        var d=snap.val()||{};
+        esgIds=Object.keys(d).filter(function(k){return d[k]===true;}).map(Number);
+        aplicarEsgotados();
+      });
+    },60000);
+  }
+
+  var _mergeTimer=null;
+  function mergeRender(){
+    clearTimeout(_mergeTimer);
+    _mergeTimer=setTimeout(renderTudo,200);
+  }
+
+  initFB();
+})();
+</script>
+</body>
