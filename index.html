@@ -497,18 +497,6 @@ function createHeartBtn(brand, name, sub, img) {
   return btn;
 }
 
-// Inject hearts into static cards
-document.querySelectorAll('#colecao .product-card').forEach(function(card) {
-  var w = card.querySelector('.product-img-wrap'), b = card.querySelector('.product-brand'), n = card.querySelector('.product-name'), s = card.querySelector('.product-sub'), im = card.querySelector('img');
-  if (!w || !b || !n) return;
-  w.appendChild(createHeartBtn(b.textContent.trim(), n.innerHTML.trim(), s ? s.textContent.trim() : '', im ? (im.getAttribute('data-src') || im.src) : ''));
-});
-document.querySelectorAll('#maes .maes-card').forEach(function(card) {
-  var w = card.querySelector('.product-img-wrap'), b = card.querySelector('.product-brand'), n = card.querySelector('.product-name'), s = card.querySelector('.product-sub'), im = card.querySelector('img');
-  if (!w || !b || !n) return;
-  w.appendChild(createHeartBtn(b.textContent.trim(), n.innerHTML.trim(), s ? s.textContent.trim() : '', im ? (im.getAttribute('data-src') || im.src) : ''));
-});
-
 // Patch build functions
 var _origBuildTodos = buildTodosCard;
 buildTodosCard = function(p) { var card = _origBuildTodos(p); card.insertBefore(createHeartBtn(p.brand, p.name, p.sub, p.img), card.firstChild); return card; };
@@ -806,13 +794,15 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { clo
     // Coleção
     var colGrid=document.querySelector('#colecaoGrid');
     if(colGrid){
-      colGrid.querySelectorAll('[data-pid]').forEach(function(c){c.remove();});
+      // Limpa todos os cards dinâmicos (evita duplicação)
+      colGrid.querySelectorAll('.product-card').forEach(function(c){c.remove();});
       colecao.forEach(function(p){colGrid.appendChild(makeCard(p,'product-card'));});
     }
     // Mães
     var maesGrid=document.querySelector('#maesGrid');
     if(maesGrid){
-      maesGrid.querySelectorAll('[data-pid]').forEach(function(c){c.remove();});
+      // Limpa todos os cards dinâmicos (evita duplicação)
+      maesGrid.querySelectorAll('.maes-card').forEach(function(c){c.remove();});
       maes.forEach(function(p){maesGrid.appendChild(makeCard(p,'maes-card'));});
     }
     // Todos e Beleza (lazy via arrays)
@@ -872,9 +862,10 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { clo
     db.ref('produtos_custom').on('value',function(snap){
       var d=snap.val()||{};
       window._fbCustomProducts=d;
-      // Remove custom antigos do allFbProducts
-      Object.keys(allFbProducts).forEach(function(id){
-        if(allFbProducts[id]&&allFbProducts[id].custom&&!allFbProducts[id].static)delete allFbProducts[parseInt(id)];
+      // Remove do allFbProducts qualquer produto cujo ID existe em produtos_custom
+      // Isso evita duplicação caso o mesmo produto exista em produtos_estaticos e produtos_custom
+      Object.keys(d).forEach(function(id){
+        delete allFbProducts[parseInt(id)];
       });
       Object.keys(d).forEach(function(id){allFbProducts[parseInt(id)]=d[id];});
       mergeRender();
