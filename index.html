@@ -439,14 +439,14 @@ function isFavorited(brand, name) {
   var key = getFavKey(brand, name);
   return _favorites.some(function(f) { return f.key === key; });
 }
-function toggleFavorite(brand, name, sub, img, el) {
+function toggleFavorite(brand, name, sub, img, el, pid) {
   var key = getFavKey(brand, name);
   var idx = _favorites.findIndex(function(f) { return f.key === key; });
   if (idx > -1) {
     _favorites.splice(idx, 1);
     if (el) el.classList.remove('active');
   } else {
-    _favorites.push({ key: key, brand: brand, name: name.replace(/<br\s*\/?>/gi, ' '), sub: sub, img: img });
+    _favorites.push({ key: key, brand: brand, name: name.replace(/<br\s*\/?>/gi, ' '), sub: sub, img: img, pid: pid||null });
     if (el) { el.classList.add('active'); el.classList.remove('fav-heart-pop'); void el.offsetWidth; el.classList.add('fav-heart-pop'); }
   }
   syncAllHearts(); updateFavUI();
@@ -479,8 +479,12 @@ function renderFavList() {
 }
 function updateFavWaLink() {
   if (!_favorites.length) return;
+  var baseUrl = window.location.origin + window.location.pathname;
   var msg = 'Olá Tânia! 🌸 Vi o catálogo Tania Parfum e gostaria de saber o valor dos seguintes produtos:\n\n';
-  _favorites.forEach(function(f) { msg += '• ' + f.brand + ' — ' + f.name + '\n'; });
+  _favorites.forEach(function(f) {
+    msg += '• ' + f.brand + ' — ' + f.name + '\n';
+    if (f.pid) msg += '  🔗 ' + baseUrl + '?p=' + f.pid + '\n';
+  });
   msg += '\nAguardo seu retorno! 😊';
   document.getElementById('favWaBtn').href = 'https://wa.me/5562991930771?text=' + encodeURIComponent(msg);
 }
@@ -502,13 +506,14 @@ function syncModalCartBtn() {
   if (btn) btn.classList.toggle('active', active);
   if (txt) txt.textContent = active ? '✓ Adicionado ao carrinho' : 'Adicionar ao carrinho';
 }
-function createHeartBtn(brand, name, sub, img) {
+function createHeartBtn(brand, name, sub, img, pid) {
   var btn = document.createElement('button');
   btn.className = 'fav-heart' + (isFavorited(brand, name) ? ' active' : '');
   btn.setAttribute('data-fav-brand', brand);
   btn.setAttribute('data-fav-name', name);
+  if (pid) btn.setAttribute('data-fav-pid', pid);
   btn.innerHTML = BAG_SVG;
-  btn.addEventListener('click', function(e) { e.stopPropagation(); e.preventDefault(); toggleFavorite(brand, name, sub, img, btn); });
+  btn.addEventListener('click', function(e) { e.stopPropagation(); e.preventDefault(); toggleFavorite(brand, name, sub, img, btn, pid); });
   return btn;
 }
 
@@ -770,7 +775,7 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { clo
         '</div>';
       // Botão carrinho/favorito
       if(typeof createHeartBtn==='function'){
-        el.insertBefore(createHeartBtn(p.brand||'',p.name||'',p.sub||'',foto),el.firstChild);
+        el.insertBefore(createHeartBtn(p.brand||'',p.name||'',p.sub||'',foto,pid),el.firstChild);
       }
     } else if(cls==='maes-card'){
       el.className='maes-card';
@@ -788,7 +793,7 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { clo
         '</div>';
       if(typeof createHeartBtn==='function'){
         var wrap=el.querySelector('.product-img-wrap');
-        if(wrap)wrap.appendChild(createHeartBtn(p.brand||'',p.name||'',p.sub||'',foto));
+        if(wrap)wrap.appendChild(createHeartBtn(p.brand||'',p.name||'',p.sub||'',foto,pid));
       }
     } else {
       el.className='product-card';
@@ -806,7 +811,7 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { clo
         '</div>';
       if(typeof createHeartBtn==='function'){
         var wrap=el.querySelector('.product-img-wrap');
-        if(wrap)wrap.appendChild(createHeartBtn(p.brand||'',p.name||'',p.sub||'',foto));
+        if(wrap)wrap.appendChild(createHeartBtn(p.brand||'',p.name||'',p.sub||'',foto,pid));
       }
     }
 
@@ -963,7 +968,59 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { clo
           }
         });
       }
+      // Deep link: se veio de ?p=123, rola e abre o produto
+      if(typeof abrirProdutoPorId==='function') abrirProdutoPorId();
     },80);
+  }
+
+  // ── DEEP LINK: abre produto direto pela URL ?p=ID ──
+  var _deepLinkTentado=false;
+  window.abrirProdutoPorId=function(){
+    if(_deepLinkTentado)return;
+    var params=new URLSearchParams(window.location.search);
+    var pid=parseInt(params.get('p'));
+    if(!pid)return;
+    // Tenta achar o card na página (pode estar em qualquer aba)
+    var card=document.querySelector('[data-pid="'+pid+'"]');
+    if(!card){
+      // Card ainda não renderizou (pode estar em aba inativa). Procura nos dados do FB
+      var p=allFbProducts[pid];
+      if(!p)return; // produto não existe mais
+      // Descobre em que aba ele vive e troca pra lá
+      var tabs=(p.catalogTabs&&p.catalogTabs.length)?p.catalogTabs:[p.catalogTab||'todos'];
+      var tabDestino=tabs[0];
+      if(typeof switchTab==='function'){
+        switchTab(tabDestino);
+        // Tenta de novo depois que a aba renderizou
+        setTimeout(function(){
+          var c=document.querySelector('[data-pid="'+pid+'"]');
+          if(c)_abrirCard(c,p);
+        },300);
+        return;
+      }
+    } else {
+      _deepLinkTentado=true;
+      var p=allFbProducts[pid]||{};
+      _abrirCard(card,p);
+    }
+  };
+  function _abrirCard(card,p){
+    _deepLinkTentado=true;
+    // Rola até o card com uma folga no topo
+    try{ card.scrollIntoView({behavior:'smooth',block:'center'}); }catch(e){ card.scrollIntoView(); }
+    // Abre o modal depois de rolar
+    setTimeout(function(){
+      var foto=p.foto||card.querySelector('img')&&card.querySelector('img').src||'';
+      var price=precosFirebase[p.id||0]||p.price||'';
+      var priceStr=(mostrarPrecosCatalogo&&price)?'R$ '+parseFloat(price).toFixed(2).replace('.',','):'';
+      window._pendingPid=p.id||null;
+      window._currentModalPid=p.id||null;
+      openProdModal(foto,p.brand||'',p.name||'',p.sub||'',p.badge||'',p.badgeClass||'pink',priceStr,p.id||null);
+      // Destaque visual rápido no card (opcional, útil pro cliente ver que foi esse)
+      card.style.outline='2px solid #C9A84C';
+      card.style.outlineOffset='4px';
+      setTimeout(function(){card.style.outline='';card.style.outlineOffset='';},2500);
+    },450);
   }
 
   // ── Init Firebase ──
